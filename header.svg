@@ -1,0 +1,111 @@
+<svg viewBox="0 0 1200 300" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#050810"/>
+      <stop offset="45%" stop-color="#0b1424"/>
+      <stop offset="100%" stop-color="#141b2e"/>
+    </linearGradient>
+
+    <radialGradient id="glowSpot" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#58a6ff" stop-opacity="0.35"/>
+      <stop offset="100%" stop-color="#58a6ff" stop-opacity="0"/>
+    </radialGradient>
+
+    <linearGradient id="textGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#8ec9ff"/>
+      <stop offset="50%" stop-color="#e6f1ff"/>
+      <stop offset="100%" stop-color="#58a6ff"/>
+    </linearGradient>
+
+    <pattern id="dotGrid" width="26" height="26" patternUnits="userSpaceOnUse">
+      <circle cx="1.2" cy="1.2" r="1.2" fill="#ffffff" opacity="0.05"/>
+    </pattern>
+
+    <filter id="softGlow" x="-60%" y="-60%" width="220%" height="220%">
+      <feGaussianBlur stdDeviation="4" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- base -->
+  <rect width="1200" height="300" fill="url(#bgGrad)"/>
+  <rect width="1200" height="300" fill="url(#dotGrid)"/>
+  <ellipse cx="920" cy="80" rx="380" ry="220" fill="url(#glowSpot)"/>
+  <ellipse cx="180" cy="260" rx="300" ry="160" fill="url(#glowSpot)" opacity="0.6"/>
+
+  <!-- neural network lattice, right side -->
+  <g stroke="#3d6a99" stroke-width="1.1" opacity="0.55" fill="none">
+    <path d="M 760 60 L 860 40 L 960 70 L 1050 45" >
+      <animate attributeName="stroke-dasharray" values="0,400;400,0" dur="4s" repeatCount="indefinite"/>
+    </path>
+    <path d="M 760 60 L 840 110 L 930 90 L 1010 130">
+      <animate attributeName="stroke-dasharray" values="0,400;400,0" dur="5s" repeatCount="indefinite"/>
+    </path>
+    <path d="M 860 40 L 840 110 L 900 170 L 980 150">
+      <animate attributeName="stroke-dasharray" values="0,400;400,0" dur="6s" repeatCount="indefinite"/>
+    </path>
+    <path d="M 960 70 L 930 90 L 1000 190 L 1080 165">
+      <animate attributeName="stroke-dasharray" values="0,400;400,0" dur="4.5s" repeatCount="indefinite"/>
+    </path>
+    <path d="M 1050 45 L 1010 130 L 1080 165 L 1140 120">
+      <animate attributeName="stroke-dasharray" values="0,400;400,0" dur="5.5s" repeatCount="indefinite"/>
+    </path>
+    <path d="M 900 170 L 1000 190 L 1060 240 L 950 250">
+      <animate attributeName="stroke-dasharray" values="0,400;400,0" dur="7s" repeatCount="indefinite"/>
+    </path>
+  </g>
+
+  <g fill="#7fd0ff">
+    <circle cx="760" cy="60" r="4"><animate attributeName="opacity" values="0.3;1;0.3" dur="2.4s" repeatCount="indefinite"/></circle>
+    <circle cx="860" cy="40" r="3.5"><animate attributeName="opacity" values="0.3;1;0.3" dur="3.1s" repeatCount="indefinite"/></circle>
+    <circle cx="960" cy="70" r="4"><animate attributeName="opacity" values="1;0.3;1" dur="2.7s" repeatCount="indefinite"/></circle>
+    <circle cx="1050" cy="45" r="3"><animate attributeName="opacity" values="0.3;1;0.3" dur="3.6s" repeatCount="indefinite"/></circle>
+    <circle cx="840" cy="110" r="4.5"><animate attributeName="opacity" values="1;0.4;1" dur="2.9s" repeatCount="indefinite"/></circle>
+    <circle cx="930" cy="90" r="3.5"><animate attributeName="opacity" values="0.3;1;0.3" dur="3.3s" repeatCount="indefinite"/></circle>
+    <circle cx="1010" cy="130" r="4"><animate attributeName="opacity" values="1;0.3;1" dur="2.5s" repeatCount="indefinite"/></circle>
+    <circle cx="900" cy="170" r="3.5"><animate attributeName="opacity" values="0.3;1;0.3" dur="4s" repeatCount="indefinite"/></circle>
+    <circle cx="980" cy="150" r="3"><animate attributeName="opacity" values="1;0.4;1" dur="3.4s" repeatCount="indefinite"/></circle>
+    <circle cx="1000" cy="190" r="4.5"><animate attributeName="opacity" values="0.3;1;0.3" dur="2.6s" repeatCount="indefinite"/></circle>
+    <circle cx="1080" cy="165" r="3.5"><animate attributeName="opacity" values="1;0.3;1" dur="3.8s" repeatCount="indefinite"/></circle>
+    <circle cx="1140" cy="120" r="3"><animate attributeName="opacity" values="0.3;1;0.3" dur="3s" repeatCount="indefinite"/></circle>
+    <circle cx="1060" cy="240" r="4"><animate attributeName="opacity" values="1;0.4;1" dur="2.8s" repeatCount="indefinite"/></circle>
+    <circle cx="950" cy="250" r="3.5"><animate attributeName="opacity" values="0.3;1;0.3" dur="3.5s" repeatCount="indefinite"/></circle>
+  </g>
+
+  <!-- circuit trace accent, bottom-left -->
+  <g stroke="#2a3f5f" stroke-width="2" fill="none" opacity="0.7">
+    <path d="M 0 250 L 60 250 L 80 270 L 160 270"/>
+    <path d="M 0 210 L 30 210 L 50 230 L 120 230 L 140 250"/>
+    <circle cx="60" cy="250" r="3" fill="#58a6ff"/>
+    <circle cx="160" cy="270" r="3" fill="#58a6ff"/>
+    <circle cx="30" cy="210" r="3" fill="#3d6a99"/>
+    <circle cx="140" cy="250" r="3" fill="#3d6a99"/>
+  </g>
+
+  <!-- scanning sweep line -->
+  <rect x="-200" y="0" width="140" height="300" fill="#58a6ff" opacity="0.05">
+    <animate attributeName="x" values="-200;1300" dur="6s" repeatCount="indefinite"/>
+  </rect>
+
+  <!-- text -->
+  <text x="70" y="150" font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="46" font-weight="700" fill="url(#textGrad)" filter="url(#softGlow)">
+    Arivazhagan Thangasamy
+  </text>
+  <text x="72" y="188" font-family="'Consolas', 'Courier New', monospace" font-size="19" fill="#8fa1b3" letter-spacing="0.5">
+    AI Engineer  ·  Computer Vision  ·  Generative AI
+  </text>
+
+  <!-- underline accent -->
+  <rect x="72" y="204" width="230" height="3" rx="1.5" fill="#58a6ff" opacity="0.8"/>
+
+  <!-- top-left status chip -->
+  <g transform="translate(70,60)">
+    <circle cx="0" cy="0" r="4" fill="#43ffb0">
+      <animate attributeName="opacity" values="1;0.3;1" dur="1.8s" repeatCount="indefinite"/>
+    </circle>
+    <text x="12" y="4" font-family="'Consolas', monospace" font-size="12" fill="#43ffb0" letter-spacing="1.5">BUILDING WITH AI</text>
+  </g>
+</svg>
