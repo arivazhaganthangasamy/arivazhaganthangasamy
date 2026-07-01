@@ -9,7 +9,6 @@
 <p>
   <img src="https://img.shields.io/badge/🎓_Status-B.sc_CS_Student-0f2027?style=for-the-badge&labelColor=203a43"/>
   <img src="https://img.shields.io/badge/🤖_Focus-AI_%26_Computer_Vision-2c5364?style=for-the-badge&labelColor=203a43"/>
-  <img src="https://img.shields.io/badge/📍_Open_to-Internships_%26_Collabs-0f2027?style=for-the-badge&labelColor=203a43"/>
 </p>
 
 </div>
