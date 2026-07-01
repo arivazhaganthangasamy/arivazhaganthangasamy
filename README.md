@@ -1,9 +1,9 @@
 <div align="center">
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:0f2027,50:203a43,100:2c5364&height=220&section=header&text=Arivazhagan%20Thangasamy&fontSize=42&fontColor=ffffff&animation=fadeIn&fontAlignY=38&desc=AI%20Engineer%20%7C%20Computer%20Vision%20%7C%20Generative%20AI&descAlignY=58&descSize=18" width="100%"/>
+<img src="assets/header.svg" width="100%"/>
 
 <a href="https://git.io/typing-svg">
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=24&duration=3000&pause=800&color=58A6FF&center=true&vCenter=true&width=650&lines=Building+intelligent+systems+with+AI;Computer+Vision+%7C+NLP+%7C+Generative+AI;Turning+research+into+real-world+products;Always+learning%2C+always+shipping" alt="Typing SVG" />
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=22&duration=3000&pause=800&color=58A6FF&center=true&vCenter=true&width=650&lines=Building+intelligent+systems+with+AI;Computer+Vision+%7C+NLP+%7C+Generative+AI;Turning+research+into+real-world+products;Always+learning%2C+always+shipping" alt="Typing SVG" />
 </a>
 
 <p>
@@ -113,6 +113,6 @@ philosophy:  Ship it, measure it, improve it — then open-source it
 
 <i>⭐ Building intelligent systems with AI to solve real-world problems ⭐</i>
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:2c5364,50:203a43,100:0f2027&height=100&section=footer" width="100%"/>
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:141b2e,50:0b1424,100:050810&height=100&section=footer" width="100%"/>
 
 </div>
